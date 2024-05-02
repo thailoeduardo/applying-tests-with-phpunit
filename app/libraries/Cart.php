@@ -1,6 +1,8 @@
 <?php
 namespace app\libraries;
 
+use app\libraries\Product;
+
 class Cart
 {
 	private array $products = [];
@@ -8,7 +10,7 @@ class Cart
 	//
 	public function add( Product $product) 
 	{
-		$this->products[] = Product;
+		$this->products[] = $product;
 	}
 
 	//
